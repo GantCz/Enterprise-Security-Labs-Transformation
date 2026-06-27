@@ -84,7 +84,7 @@ cat ~/.ssh/id_ed25519.pub
 <img width="510" height="122" alt="image" src="https://github.com/user-attachments/assets/feddbcdf-d7d7-4bb0-a972-0a27bac5e4ef" />
 
 Once I completed this step, I restarted the service and tested the new parameters to ensure that the PasswordAuthentication is disabled
-<img width="720" height="144" alt="image" src="https://github.com/user-attachments/assets/c2a5264a-c20e-431a-9849-14c683f10a9b" />
+<img width="513" height="104" alt="image" src="https://github.com/user-attachments/assets/4b12394e-72d8-4a18-97c7-5b27e138cae0" />
 This shows that the PasswordAuthentication set to no longer working, I need to add my public key to authorized key list
 ```bash
 # create a file to store the authorized key
