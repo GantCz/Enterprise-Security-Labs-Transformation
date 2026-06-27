@@ -22,10 +22,11 @@ To understand the baseline posture of the network, I conducted active host disco
 1. Executed a live host ping sweep across the target domain space:
    ```bash
    # Emulated command layout
-   nmap -sn [Target_Subnet_Range]
+   nmap -sn 192.168.XX.X
    ```
   <img width="496" height="140" alt="image" src="https://github.com/user-attachments/assets/10bd64b0-8b08-425d-8120-c8d91af1b92d" />
-    In the image 2 host were found up out of 256 IP addresses.
+  
+
 
 ### Phase 2: Port Scanning & Service Auditing
 Once the active IP addresses were isolated, I performed a deep transport-layer scan to audit open TCP/UDP sockets, banner-grabbing the application versions to cross-reference them against known     public vulnerability lists.
@@ -33,7 +34,7 @@ Once the active IP addresses were isolated, I performed a deep transport-layer s
 1. Audited target transport interfaces to evaluate running service daemons:
    ```bash
    # Emulated command layout
-   nmap -sV -p- [Target_IP]
+   nmap -sV -p- 192.168.XX.X
    ```
 2. Analysis of Findings: The infrastructure scan revealed a critical administrative remote access port (Port 22 - SSH) exposed to the network segment,
   requiring immediate access control configurations.
