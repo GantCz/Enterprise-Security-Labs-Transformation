@@ -24,8 +24,8 @@ To understand the baseline posture of the network, I conducted active host disco
    # Emulated command layout
    nmap -sn [Target_Subnet_Range]
    ```
-  <img width="658" height="182" alt="image" src="https://github.com/user-attachments/assets/46e184aa-7ad7-4029-8ee8-385691a1a694" />
-  In the image 2 host were found up out of 256 IP addresses.
+  <img width="496" height="140" alt="image" src="https://github.com/user-attachments/assets/10bd64b0-8b08-425d-8120-c8d91af1b92d" />
+    In the image 2 host were found up out of 256 IP addresses.
 
 ### Phase 2: Port Scanning & Service Auditing
 Once the active IP addresses were isolated, I performed a deep transport-layer scan to audit open TCP/UDP sockets, banner-grabbing the application versions to cross-reference them against known     public vulnerability lists.
