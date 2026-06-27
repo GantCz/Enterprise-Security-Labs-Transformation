@@ -24,7 +24,7 @@ To understand the baseline posture of the network, I conducted active host disco
    # Emulated command layout
    nmap -sn [Target_Subnet_Range]
    ```
-   (Screenshot here)
+   <img width="662" height="189" alt="image" src="https://github.com/user-attachments/assets/d08812c0-dde0-41a6-a436-b8628d5fb1ec" />
 
    ### Phase 2: Port Scanning & Service Auditing
    Once the active IP addresses were isolated, I performed a deep transport-layer scan to audit open TCP/UDP sockets, banner-grabbing the application versions to cross-reference them against known public vulnerability lists.
